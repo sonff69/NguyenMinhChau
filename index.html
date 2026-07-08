@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Minh Châu - Digital Portfolio</title>
+    <title>Nguyễn Minh Châu Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts hỗ trợ trọn vẹn tiếng Việt -->
+    <!-- Google Fonts hỗ trợ trọn vẹn tiếng Việt cho phần thân bài -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -36,7 +36,7 @@
                         }
                     },
                     fontFamily: {
-                        serif: ['"Lora"', 'serif'],
+                        serif: ['Georgia', '"Times New Roman"', 'serif'], // Sử dụng Georgia để sửa lỗi mất dấu triệt để
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
@@ -64,7 +64,7 @@
         }
 
         .text-glow {
-            text-shadow: 0 0 15px rgba(255, 94, 108, 0.3);
+            text-shadow: 0 0 20px rgba(255, 94, 108, 0.35);
         }
 
         /* Glassmorphism hiệu ứng mờ sương */
@@ -148,9 +148,9 @@
                 <i class="fa-regular fa-sparkles mr-2"></i> Công Nghệ Số & Trí Tuệ Nhân Tạo
             </div>
             
-            <!-- Tên tiêu đề lớn, đảm bảo không lỗi font, không mất dấu và không đè chữ -->
-            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-snug text-white">
-                <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-forest-light to-forest-sage drop-shadow-sm">
+            <!-- Tên tiêu đề lớn sử dụng Georgia chuẩn mực để sửa lỗi hiển thị dấu mũ hoa rụng/lệch -->
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-normal text-white">
+                <span class="block text-glow">
                     NGUYỄN MINH CHÂU
                 </span>
             </h1>
@@ -387,7 +387,7 @@
     <section id="ethics" class="py-32 px-6 max-w-7xl mx-auto relative z-20">
         <div class="text-center space-y-4 mb-20">
             <span class="text-xs font-bold uppercase tracking-widest text-hibiscus-glow">Bản Đồ Tư Duy Chuẩn Mực</span>
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white leading-normal">Mô Hình Đạo Đức Học Thuật Khi Ứng Dụng AI</h2>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white leading-normal">Mô Kinh Đạo Đức Học Thuật Khi Ứng Dụng AI</h2>
             <div class="w-16 h-0.5 bg-gradient-to-r from-hibiscus-red to-hibiscus-glow mx-auto mt-4 rounded-full"></div>
             <p class="text-forest-light/65 max-w-2xl mx-auto font-light text-xs md:text-sm">
                 Minh họa trực quan hệ thống quy trình kiểm soát học tập lành mạnh của tôi tại Trường Đại học Kinh tế - ĐHQGHN, được căn chỉnh phân bố cân đối không bị chồng lấp chữ.
