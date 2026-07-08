@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth">
+<html lang="vi" class="scroll-smooth font-sans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Minh Châu Portfolio</title>
+    <title>Nguyễn Minh Châu - Digital Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts hỗ trợ trọn vẹn tiếng Việt cho phần thân bài -->
+    <!-- Google Fonts hỗ trợ trọn vẹn tiếng Việt gốc -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Be+Vietnam+Pro:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -34,18 +34,21 @@
                             warm: '#fdf9ee',   // Ánh sáng nắng chiều ấm áp
                             gold: '#f5d47a',   // Vàng nắng nhạt mộng mơ
                         }
-                    },
-                    fontFamily: {
-                        serif: ['Georgia', '"Times New Roman"', 'serif'], // Sử dụng Georgia để sửa lỗi mất dấu triệt để
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
     <style>
+        /* Ép font Lora và Be Vietnam Pro hiển thị triệt để chống vỡ dấu */
+        .font-serif {
+            font-family: 'Lora', Georgia, 'Times New Roman', serif !important;
+        }
+        .font-sans {
+            font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif !important;
+        }
+
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #04110e;
             color: #f4eae1;
             overflow-x: hidden;
@@ -102,7 +105,7 @@
         }
     </style>
 </head>
-<body class="relative min-h-screen">
+<body class="relative min-h-screen font-sans">
 
     <!-- Canvas tạo các cánh hoa râm bụt và lá xanh rơi nhè nhẹ -->
     <canvas id="petal-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-10"></canvas>
@@ -200,7 +203,7 @@
                     </h2>
                 </div>
                 
-                <p class="text-forest-light/80 text-sm md:text-base leading-relaxed font-light">
+                <p class="text-forest-light/80 text-sm md:text-base leading-relaxed font-light font-sans">
                     Xin chào! Tôi là <strong class="text-white font-medium">Nguyễn Minh Châu</strong>, hiện là sinh viên năm nhất ngành <strong class="text-sunset-gold font-medium">Quản trị Kinh doanh</strong> tại <strong class="text-white font-medium">Trường Đại học Kinh tế - Đại học Quốc gia Hà Nội</strong>. 
                     Với mã số sinh viên <strong class="text-white font-medium">25051486</strong>, tôi luôn mong muốn tìm kiếm sự giao thoa hài hòa giữa kỹ năng quản trị cốt lõi và xu hướng công nghệ số hóa. Trong kỷ nguyên mới, tôi tin rằng việc hiểu biết và sử dụng Trí tuệ nhân tạo (AI) một cách có trách nhiệm chính là chìa khóa mở ra tư duy sáng tạo đột phá nhưng vẫn giữ trọn các giá trị chuẩn mực về liêm chính học thuật.
                 </p>
@@ -250,7 +253,7 @@
                     <i class="fab fa-google-drive"></i>
                 </div>
                 <h3 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Hồ Sơ Học Tập Lưu Trữ Trên Google Drive</h3>
-                <p class="text-forest-light/80 font-light text-xs md:text-sm max-w-xl mx-auto">
+                <p class="text-forest-light/80 font-light text-xs md:text-sm max-w-xl mx-auto font-sans">
                     Toàn bộ các tài liệu học tập thực tế, các báo cáo phân tích chi tiết định dạng PDF cùng những ghi chép quy trình tự học của tôi được lưu trữ khoa học và minh bạch trong thư mục Drive dùng chung.
                 </p>
                 <div>
@@ -271,7 +274,7 @@
             <h2 class="font-serif text-3xl md:text-4xl font-bold text-white leading-normal">Nhật Ký Các Bài Tập Thực Hành Đặc Trưng</h2>
             <div class="w-16 h-0.5 bg-gradient-to-r from-hibiscus-red to-hibiscus-glow mx-auto mt-4 rounded-full"></div>
             <p class="text-forest-light/65 max-w-2xl mx-auto font-light text-xs md:text-sm">
-                Hãy click vào từng tấm thẻ dưới đây để theo dõi chi tiết quá trình tôi phân tích, lập luận, thiết kế câu lệnh và đúc kết những bài học thực tiễn trong từng tuần học.
+                Hãy click vào từng tấm thẻ dưới đây để mở giao diện **tương tác trải nghiệm thực hành giả lập** ngay tại chỗ của từng tuần học.
             </p>
         </div>
 
@@ -286,12 +289,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-folder-open"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Quản lý tệp tin và thư mục trên máy tính cá nhân</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Xây dựng tư duy khoa học trong tổ chức dữ liệu số, phân cấp sơ đồ thư mục và áp dụng quy tắc đặt tên tệp chuyên nghiệp giúp nâng cao hiệu năng tìm kiếm tài nguyên học tập.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -303,12 +306,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-magnifying-glass"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Tìm kiếm và đánh giá dữ liệu số học thuật</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Nghiên cứu ứng dụng công nghệ trong việc quản trị trải nghiệm khách hàng tại các doanh nghiệp bán lẻ Việt Nam. Sử dụng cú pháp Boolean nâng cao để tìm lọc nguồn tin chuẩn mực.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -320,12 +323,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-message-dots"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Kỹ nghệ viết Prompt hỗ trợ tác vụ học tập</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Thiết kế các bộ câu lệnh tối ưu thông qua kỹ thuật định hình vai trò chuyên gia, phân tích chuỗi tư duy giúp giải quyết nhanh gọn việc đọc hiểu bài luận và tóm tắt học thuật.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -337,12 +340,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-user-group"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Cộng tác dự án trực tuyến và quản trị thông tin nhóm</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Tổ chức vận hành một dự án marketing số thực tế cho nhóm khởi nghiệp. Làm quen hệ sinh thái ứng dụng quản trị Kanban Trello, lưu trữ Drive và giao tiếp Discord chuyên nghiệp.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -354,12 +357,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-palette"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Sáng tạo nội dung truyền thông bằng trí tuệ nhân tạo</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Áp dụng mô hình kết hợp công cụ tạo sinh chữ Google Gemini, tạo sinh hình ảnh Banana AI và Canva AI tạo lập bộ sản phẩm Infographic tiêu dùng xanh lôi cuốn thế hệ trẻ.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -371,12 +374,12 @@
                         <div class="text-hibiscus-glow text-lg"><i class="fa-regular fa-shield-heart"></i></div>
                     </div>
                     <h3 class="font-serif text-lg font-bold text-white mb-3 leading-snug">Sử dụng công nghệ AI có trách nhiệm và nguyên tắc liêm chính</h3>
-                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6">
+                    <p class="text-forest-light/70 text-xs font-light line-clamp-3 mb-6 font-sans">
                         Phân tích chuyên sâu ranh giới mỏng manh giữa sự hỗ trợ hợp lý và hành vi gian lận học thuật tại VNU-UEB. Tự hoạch định 5 điều kỷ luật bản thân khi đón đầu làn sóng AI.
                     </p>
                 </div>
-                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group">
-                    Chi tiết quá trình <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                <button class="text-left text-xs font-semibold text-hibiscus-glow hover:text-white transition-colors flex items-center group font-sans">
+                    Chi tiết & Tương tác giả lập <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
@@ -387,9 +390,9 @@
     <section id="ethics" class="py-32 px-6 max-w-7xl mx-auto relative z-20">
         <div class="text-center space-y-4 mb-20">
             <span class="text-xs font-bold uppercase tracking-widest text-hibiscus-glow">Bản Đồ Tư Duy Chuẩn Mực</span>
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white leading-normal">Mô Kinh Đạo Đức Học Thuật Khi Ứng Dụng AI</h2>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white leading-normal">Mô Hình Đạo Đức Học Thuật Khi Ứng Dụng AI</h2>
             <div class="w-16 h-0.5 bg-gradient-to-r from-hibiscus-red to-hibiscus-glow mx-auto mt-4 rounded-full"></div>
-            <p class="text-forest-light/65 max-w-2xl mx-auto font-light text-xs md:text-sm">
+            <p class="text-forest-light/65 max-w-2xl mx-auto font-light text-xs md:text-sm font-sans">
                 Minh họa trực quan hệ thống quy trình kiểm soát học tập lành mạnh của tôi tại Trường Đại học Kinh tế - ĐHQGHN, được căn chỉnh phân bố cân đối không bị chồng lấp chữ.
             </p>
         </div>
@@ -404,7 +407,7 @@
                         <i class="fa-solid fa-crown text-xl"></i>
                         <h4 class="font-serif text-base font-bold">3 Nguyên Tắc Vàng</h4>
                     </div>
-                    <ul class="space-y-4 text-xs font-light text-forest-light/80">
+                    <ul class="space-y-4 text-xs font-light text-forest-light/80 font-sans">
                         <li class="p-3 rounded-lg bg-forest-mid/40 border-l-2 border-sunset-gold/50">
                             <strong>1. Ý tưởng xuất phát từ con người:</strong> Phác thảo hệ thống tư duy cá nhân độc lập trước khi kích hoạt bất kỳ trợ lý ảo nào.
                         </li>
@@ -423,11 +426,11 @@
                     <h3 class="font-serif text-xl md:text-2xl font-bold text-white text-glow leading-normal">
                         SỬ DỤNG AI CÓ TRÁCH NHIỆM
                     </h3>
-                    <p class="text-xs text-forest-light/65 font-light max-w-xs leading-relaxed">
+                    <p class="text-xs text-forest-light/65 font-light max-w-xs leading-relaxed font-sans">
                         Chính sách định hướng học thuật mở rộng <br> của Đại học Kinh tế - ĐHQGHN
                     </p>
                     <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-forest-sage/50 to-transparent my-2"></div>
-                    <span class="text-[10px] font-semibold tracking-widest text-sunset-gold uppercase px-3 py-1 rounded-full bg-forest-deep/70 border border-forest-sage/20">
+                    <span class="text-[10px] font-semibold tracking-widest text-sunset-gold uppercase px-3 py-1 rounded-full bg-forest-deep/70 border border-forest-sage/20 font-sans">
                         Cam kết liêm chính học thuật
                     </span>
                 </div>
@@ -438,7 +441,7 @@
                         <i class="fa-solid fa-route text-xl"></i>
                         <h4 class="font-serif text-base font-bold">Quy Trình Kiểm Soát</h4>
                     </div>
-                    <ul class="space-y-4 text-xs font-light text-forest-light/80">
+                    <ul class="space-y-4 text-xs font-light text-forest-light/80 font-sans">
                         <li class="p-3 rounded-lg bg-forest-mid/40 border-l-2 border-hibiscus-glow/50">
                             <strong>Bước 1:</strong> Tham khảo từ AI ở khâu tìm kiếm từ khóa, gợi ý khung dàn ý tổng quát của chủ đề thảo luận.
                         </li>
@@ -454,7 +457,7 @@
             </div>
 
             <!-- Khối ranh giới đạo đức bên dưới -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 relative z-10 font-sans">
                 <div class="p-5 rounded-2xl bg-[#071f18] border border-emerald-500/20 text-emerald-300">
                     <h5 class="text-xs font-bold uppercase tracking-wider flex items-center mb-2">
                         <i class="fa-solid fa-circle-check mr-2 text-sm"></i> Sử dụng hợp lệ (Dưới 30% AI hỗ trợ)
@@ -476,9 +479,9 @@
     </section>
 
     <!-- Tổng kết & Trải nghiệm (Reflection Section) -->
-    <section id="reflection" class="py-32 px-6 max-w-4xl mx-auto relative z-20">
+    <section id="reflection" class="py-32 px-6 max-w-4xl mx-auto relative z-20 font-sans">
         <div class="text-center space-y-4 mb-16">
-            <span class="text-xs font-bold uppercase tracking-widest text-hibiscus-glow">Nhìn lại hành trình</span>
+            <span class="text-xs font-bold uppercase tracking-widest text-hibiscus-glow font-sans">Nhìn lại hành trình</span>
             <h2 class="font-serif text-3xl font-bold text-white">Lời tự sự cuối môn học</h2>
         </div>
 
@@ -487,7 +490,7 @@
             <span class="absolute -top-10 left-6 text-[150px] font-serif text-forest-sage/15 pointer-events-none select-none">“</span>
             
             <div class="relative z-10 space-y-8">
-                <p class="text-forest-light/95 text-base md:text-lg font-light leading-relaxed italic text-center">
+                <p class="text-forest-light/95 text-base md:text-lg font-light leading-relaxed italic text-center font-serif">
                     Môn học "Nhập môn công nghệ số và ứng dụng trí tuệ nhân tạo" thực sự là một dấu mốc đáng nhớ trong năm học đầu tiên của tôi tại trường đại học. Nó không chỉ mở rộng vốn hiểu biết của tôi về thế giới công nghệ hiện đại, mà còn rèn luyện cho tôi một phong cách làm việc ngăn nắp, có hệ thống.
                 </p>
                 <p class="text-forest-light/75 text-xs md:text-sm font-light leading-relaxed">
@@ -504,7 +507,7 @@
     </section>
 
     <!-- Chân trang (Footer) -->
-    <footer class="py-12 border-t border-forest-sage/15 glass-nav relative z-20 text-center">
+    <footer class="py-12 border-t border-forest-sage/15 glass-nav relative z-20 text-center font-sans">
         <div class="max-w-7xl mx-auto px-6 space-y-6">
             <h3 class="font-serif font-bold text-lg text-white tracking-wider">NGUYỄN MINH CHÂU</h3>
             <p class="text-xs font-light text-forest-light/50 tracking-wider">
@@ -526,12 +529,12 @@
         <div class="glass-card w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-3xl p-8 border border-forest-sage/35 relative shadow-2xl space-y-6 animate-scale-up">
             
             <!-- Nút đóng cửa sổ -->
-            <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-full bg-forest-mid text-forest-light/80 hover:text-white hover:bg-hibiscus-red transition-all duration-200">
+            <button onclick="closeModal()" class="absolute top-6 right-6 p-2 rounded-full bg-forest-mid text-forest-light/80 hover:text-white hover:bg-hibiscus-red transition-all duration-200 z-50">
                 <i class="fa-solid fa-xmark text-base"></i>
             </button>
 
             <!-- Vùng chứa nội dung bài tập được đổ tự động -->
-            <div id="modal-content-area" class="space-y-6">
+            <div id="modal-content-area" class="space-y-6 font-sans">
                 <!-- Javascript sẽ tự chèn dữ liệu mượt mà tại đây -->
             </div>
         </div>
@@ -633,179 +636,416 @@
         initParticles();
         animateParticles();
 
-        // Cơ sở dữ liệu lưu trữ 6 bài tập lớn - Văn phong tự nhiên, không sến, không trích dẫn
+        // Biến trạng thái cho các tương tác giả lập trong modal bài tập
+        let stepW1 = 0; 
+        const filesW1 = [
+            { name: "ThucHanh_NguyenMinhChau", type: "folder", parent: "root", id: "f1", active: true },
+            { name: "GhiChu.txt", type: "file", parent: "f1", id: "file1", active: false },
+            { name: "GhiChuQuanTrong.txt", type: "file", parent: "f1", id: "file1_renamed", active: false },
+            { name: "TaiLieu", type: "folder", parent: "f1", id: "f2", active: false },
+            { name: "DiChuyen.txt", type: "file", parent: "f1", id: "file2", active: false },
+            { name: "Thùng Rác", type: "trash", parent: "system", id: "trash", active: true }
+        ];
+
+        // Dữ liệu nội dung chi tiết bài tập chứa mã giao diện tương tác độc quyền
         const assignmentData = {
             1: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 1</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Tổ chức quản lý tệp tin và quy hoạch dữ liệu khoa học</h2>
-                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
-                        <strong>Mục tiêu bài tập:</strong> Thiết lập quy trình sắp xếp dữ liệu có hệ thống, làm quen với các thao tác quản trị tệp tin trực tiếp trên ổ cứng cá nhân theo các quy chuẩn đặt tên chuyên nghiệp.
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 1</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Tổ chức quản lý tệp tin và quy hoạch dữ liệu khoa học</h2>
                     </div>
                     
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <p><strong>Quá trình thực hiện 12 bước chi tiết:</strong></p>
-                        <p class="text-xs leading-relaxed">
-                            Để tạo thói quen ngăn nắp khi lưu trữ, tôi đã triển khai một chuỗi thao tác thực tế. Tôi khởi động File Explorer bằng phím tắt <code>Windows + E</code>, truy cập ổ đĩa D và khởi tạo thư mục gốc có cấu trúc thống nhất mang tên <code>ThucHanh_NguyenMinhChau</code>. Tiếp đó, tôi tạo tệp văn bản <code>GhiChu.txt</code>, đổi tên thành <code>GhiChuQuanTrong.txt</code> và tạo thêm thư mục nhánh con mang tên <code>TaiLieu</code>.
+                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
+                        <strong>Mục tiêu bài tập:</strong> Sắp xếp cây dữ liệu có hệ thống, làm quen với thao tác quản trị tệp tin trực tiếp trên ổ cứng máy tính cá nhân theo các quy chuẩn lưu trữ chuyên nghiệp.
+                    </div>
+
+                    <!-- THIẾT KẾ GIẢ LẬP TƯƠNG TÁC QUẢN LÝ FILE -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-laptop-code mr-2"></i> Trình giả lập quản lý tệp tin của Nguyễn Minh Châu
+                        </h4>
+                        <p class="text-xs text-forest-light/60 font-light">
+                            Click nút "Thực hiện bước tiếp theo" để xem chu trình xử lý tệp tin tự động mô phỏng quy trình 12 bước thực hành.
                         </p>
-                        <p class="text-xs leading-relaxed">
-                            Để thành thạo thao tác di chuyển nguồn lực thông tin, tôi thực hiện sao chép tệp ghi chú vào thư mục con, đồng thời khởi tạo thêm tệp <code>DiChuyen.txt</code> và di dời nó bằng lệnh Cut mượt mà. Trong bước thử nghiệm bảo mật dữ liệu, tôi xóa tệp tin tại thư mục con gửi vào Thùng rác, thực hiện lệnh xóa vĩnh viễn bằng tổ hợp <code>Shift + Delete</code> đối với tệp di chuyển, và phục phục hồi nguyên vẹn tệp ghi chú quan trọng từ Thùng rác bằng thao tác Restore để khôi phục về trạng thái ban đầu.
-                        </p>
-                        
-                        <p class="pt-2 border-t border-forest-sage/20"><strong>Đúc kết thực tiễn:</strong></p>
-                        <p class="text-xs italic leading-relaxed">
-                            "Mọi hệ thống lớn đều bắt đầu từ những đơn vị lưu trữ nhỏ nhất. Việc quy hoạch cây thư mục khoa học và đặt tên tệp thống nhất không chỉ giúp tiết kiệm tối đa thời gian tìm kiếm mà còn xây dựng một tác phong làm việc chuẩn mực, sẵn sàng cho những dự án phân tích dữ liệu lớn hơn sau này."
+
+                        <!-- Khung Folder giả lập -->
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 rounded-xl bg-black/40 min-h-[180px] items-stretch">
+                            <!-- Cây thư mục trái -->
+                            <div class="md:col-span-4 border-r border-forest-sage/20 pr-4 space-y-2 text-xs">
+                                <div class="font-semibold text-white/50 mb-2">Ổ Đĩa D:</div>
+                                <div id="w1-tree-root" class="space-y-1">
+                                    <div class="flex items-center text-sunset-gold"><i class="fa-solid fa-folder-open mr-1.5"></i> ThucHanh_NMC</div>
+                                    <div id="w1-tree-sub" class="pl-4 space-y-1 text-forest-light/50">
+                                        <div class="flex items-center"><i class="fa-solid fa-folder mr-1.5 text-forest-sage"></i> TaiLieu</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Vùng hiển thị file phải -->
+                            <div class="md:col-span-8 pl-2 flex flex-wrap gap-3 items-start content-start" id="w1-file-display">
+                                <!-- File sẽ được vẽ động bằng Javascript bên dưới -->
+                                <div class="p-3 rounded-lg bg-forest-mid/50 border border-forest-sage/30 text-center text-xs w-24">
+                                    <i class="fa-solid fa-folder text-xl text-sunset-gold mb-1 block"></i>
+                                    <span class="truncate block text-[10px] text-white">ThucHanh_NMC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trình điều khiển -->
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                            <div class="text-xs text-forest-light/70" id="w1-status-text">
+                                <strong>Bước hiện tại:</strong> Khởi động ổ đĩa D, chuẩn bị tạo thư mục gốc.
+                            </div>
+                            <button onclick="nextW1Step()" class="px-4 py-2 rounded-lg bg-hibiscus-red hover:bg-hibiscus-glow text-white text-xs font-bold transition-all">
+                                Thực hiện bước tiếp theo <i class="fa-solid fa-circle-play ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 font-sans text-xs font-light text-forest-light/80 leading-relaxed pt-2">
+                        <p><strong>Tóm lược quy trình thực hiện:</strong></p>
+                        <p>
+                            Quy trình quản lý tệp tin được thực hiện chặt chẽ: Khởi tạo thư mục gốc <code>ThucHanh_NguyenMinhChau</code> tại ổ đĩa D. Sau đó tạo tệp tin văn bản trống ban đầu <code>GhiChu.txt</code>, đổi tên thành <code>GhiChuQuanTrong.txt</code> và tạo thêm thư mục nhánh con mang tên <code>TaiLieu</code>. Thực hiện sao chép tệp ghi chú vào thư mục con, đồng thời chuyển đổi tệp <code>DiChuyen.txt</code> bằng lệnh Cut. Cuối cùng, thử nghiệm xóa tệp tin chuyển vào Thùng rác, thực hiện xóa vĩnh viễn tệp tin di chuyển bằng phím tắt <code>Shift + Delete</code>, và phục hồi nguyên vẹn tệp ghi chú quan trọng từ Thùng rác về vị trí ban đầu.
                         </p>
                     </div>
                 </div>
             `,
             2: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 2</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Khai thác thông tin học thuật bằng cú pháp Boolean nâng cao</h2>
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 2</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Khai thác thông tin học thuật bằng cú pháp Boolean nâng cao</h2>
+                    </div>
+                    
                     <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
                         <strong>Đề tài nghiên cứu:</strong> "Ứng dụng công nghệ số trong quản trị trải nghiệm khách hàng tại các doanh nghiệp bán lẻ Việt Nam".
                     </div>
-                    
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <p><strong>Bộ lọc tìm kiếm và các nguồn tài liệu tin cậy:</strong></p>
-                        <p class="text-xs leading-relaxed">
-                            Tôi đã khai thác Google Scholar và hệ thống cơ sở dữ liệu số điện tử thư viện trường bằng cách thiết kế các bộ từ khóa có cú pháp Boolean chuẩn mực: <br>
-                            <code class="block p-2 bg-forest-deep text-sunset-gold my-2 rounded">"digital transformation" AND "customer experience" AND "retail"</code>
-                            <code class="block p-2 bg-forest-deep text-sunset-gold my-2 rounded">"chuyển đổi số" AND "trải nghiệm khách hàng" AND "bán lẻ"</code>
+
+                    <!-- THIẾT KẾ GIẢ LẬP TƯƠNG TÁC BOOLEAN SEARCH -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-magnifying-glass-chart mr-2"></i> Giả lập tìm kiếm dữ liệu học thuật nâng cao
+                        </h4>
+                        <p class="text-xs text-forest-light/60 font-light">
+                            Chọn một trong hai cụm cú pháp tìm kiếm học thuật dưới đây để thực hiện quét dữ liệu và hiển thị các thang đo độ tin cậy CRAAP được lập tự động.
                         </p>
-                        
-                        <p class="pt-2"><strong>Áp dụng mô hình đánh giá CRAAP:</strong></p>
-                        <p class="text-xs leading-relaxed">
-                            Tôi đã tiến hành sàng lọc các nguồn tin tìm thấy qua 5 bộ tiêu chí: độ uy tín của tác giả, danh tiếng của đơn vị xuất bản, tính thực tiễn và tính logic của phương pháp nghiên cứu, số lượng trích dẫn trong giới khoa học, và đặc biệt là tính cập nhật trong giai đoạn từ năm 2020 đến 2026.
-                        </p>
-                        <p class="text-xs leading-relaxed">
-                            Kết quả, tôi lập được bảng danh mục gồm 11 tài liệu chất lượng cao. Trong đó, có 5 bài báo khoa học nghiên cứu sâu sắc loại A (như nghiên cứu của Nguyễn & Trần về chuyển đổi số khách hàng). Tôi cũng tích hợp các dữ liệu thực chứng từ báo cáo ngành của các tổ chức uy tín hàng đầu như Bộ Công Thương, McKinsey và Deloitte để đảm bảo tính thực tiễn tốt nhất cho nghiên cứu của mình.
+
+                        <!-- Chọn cú pháp -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <button onclick="runQueryW2(1)" id="q1-btn" class="flex-1 p-3 rounded-xl border border-forest-sage/30 bg-forest-mid/30 text-left text-xs hover:border-sunset-gold transition-all">
+                                <span class="block font-bold text-white mb-1">Cú pháp tiếng Anh:</span>
+                                <code class="text-sunset-gold">"digital transformation" AND "customer experience" AND "retail"</code>
+                            </button>
+                            <button onclick="runQueryW2(2)" id="q2-btn" class="flex-1 p-3 rounded-xl border border-forest-sage/30 bg-forest-mid/30 text-left text-xs hover:border-sunset-gold transition-all">
+                                <span class="block font-bold text-white mb-1">Cú pháp tiếng Việt:</span>
+                                <code class="text-sunset-gold">"chuyển đổi số" AND "trải nghiệm khách hàng" AND "bán lẻ"</code>
+                            </button>
+                        </div>
+
+                        <!-- Kết quả giả lập -->
+                        <div class="p-4 rounded-xl bg-black/40 space-y-4 hidden" id="w2-results-box">
+                            <div class="flex justify-between items-center text-xs border-b border-forest-sage/20 pb-2">
+                                <span class="font-semibold text-white" id="w2-query-title">Kết quả tìm kiếm cho cú pháp</span>
+                                <span class="text-forest-light/50" id="w2-found-count">Tìm thấy 11 tài liệu liên quan</span>
+                            </div>
+
+                            <!-- Danh sách tài liệu tương tác -->
+                            <div class="space-y-3" id="w2-doc-list">
+                                <!-- Sẽ được vẽ động bằng Javascript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 font-sans text-xs font-light text-forest-light/75 leading-relaxed">
+                        <p><strong>Phương pháp đánh giá CRAAP:</strong></p>
+                        <p>
+                            Bằng cách sàng lọc các nguồn tin qua các tiêu chí chuẩn mực: Tác giả (Authority), Cơ quan xuất bản (Publisher), Phương pháp nghiên cứu (Methodology), Trích dẫn (Citations), và Tính cập nhật (Currency), tôi đã xây dựng thành công bảng xếp hạng 11 nguồn tư liệu khoa học có độ tin cậy vượt trội phục vụ tốt cho báo cáo chuyên ngành.
                         </p>
                     </div>
                 </div>
             `,
             3: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 3</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Thiết kế cấu trúc Prompt tối ưu hóa tác vụ tự học</h2>
-                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
-                        <strong>Mục tiêu:</strong> Làm quen với việc giao tiếp logic với mô hình ngôn ngữ lớn để phục vụ đắc lực cho 3 tác vụ tự học thường gặp của sinh viên.
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 3</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Thiết kế Prompt tối ưu hóa tác vụ tự học</h2>
                     </div>
-                    
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <div class="p-4 rounded-xl bg-forest-mid/50 border border-forest-sage/20 space-y-2">
-                            <h4 class="font-bold text-xs text-white">Tác vụ 1: Tóm tắt bài đọc chuyên ngành (Chain-of-Thought)</h4>
-                            <p class="text-xs leading-relaxed">Tôi thiết lập prompt định hình vai trò chuyên gia tóm tắt để yêu cầu AI đọc và trích xuất thông tin theo 3 bước suy nghĩ tuần tự: Xác định mục đích cốt lõi của nghiên cứu; Liệt kê 3 phát hiện quan trọng nhất; Chỉ ra các điểm hạn chế hoặc xu hướng phát triển trong tương lai.</p>
+
+                    <!-- THIẾT KẾ GIẢ LẬP SO SÁNH PROMPT -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-code-compare mr-2"></i> Kính hiển vi so sánh cấu trúc Prompt
+                        </h4>
+                        <p class="text-xs text-forest-light/60 font-light">
+                            Chọn tác vụ học tập và thay đổi cấp độ câu lệnh để thấy cấu trúc từ ngữ thay đổi và chất lượng phản hồi từ AI được nâng cao rõ rệt.
+                        </p>
+
+                        <!-- Tab tác vụ -->
+                        <div class="flex border-b border-forest-sage/20 text-xs">
+                            <button onclick="switchTaskW3(1)" id="t1-btn" class="px-4 py-2 border-b-2 border-hibiscus-red text-white font-semibold">Tác vụ 1: Tóm tắt bài đọc</button>
+                            <button onclick="switchTaskW3(2)" id="t2-btn" class="px-4 py-2 border-b-2 border-transparent text-forest-light/50">Tác vụ 2: Hiệu ứng mỏ neo</button>
+                            <button onclick="switchTaskW3(3)" id="t3-btn" class="px-4 py-2 border-b-2 border-transparent text-forest-light/50">Tác vụ 3: Đề thi Bloom</button>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-forest-mid/50 border border-forest-sage/20 space-y-2">
-                            <h4 class="font-bold text-xs text-white">Tác vụ 2: Diễn giải khái niệm phức tạp (Feynman & Few-Shot)</h4>
-                            <p class="text-xs leading-relaxed">Tôi viết câu lệnh yêu cầu AI giải thích khái niệm "Hiệu ứng mỏ neo" bằng ngôn ngữ giản dị, kèm theo ví dụ cụ thể trong đời sống thương mại (như cách Apple công bố giá sản phẩm gốc để tăng tính thuyết phục cho mức giá ưu đãi) và rút ra bài học giúp người tiêu dùng tránh bẫy tâm lý.</p>
+                        <!-- Cấp độ chọn -->
+                        <div class="flex gap-2">
+                            <button onclick="switchLevelW3('basic')" id="l-basic-btn" class="flex-1 py-2 rounded-lg bg-forest-mid/30 border border-forest-sage/20 text-xs text-white">Cấp 1: Cơ bản</button>
+                            <button onclick="switchLevelW3('improved')" id="l-improved-btn" class="flex-1 py-2 rounded-lg bg-forest-mid/30 border border-forest-sage/20 text-xs text-white">Cấp 2: Cải tiến</button>
+                            <button onclick="switchLevelW3('advanced')" id="l-advanced-btn" class="flex-1 py-2 rounded-lg bg-hibiscus-red text-white text-xs font-bold">Cấp 3: Nâng cao</button>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-forest-mid/50 border border-forest-sage/20 space-y-2">
-                            <h4 class="font-bold text-xs text-white">Tác vụ 3: Tự thiết kế bộ câu hỏi ôn tập (Bloom's Taxonomy)</h4>
-                            <p class="text-xs leading-relaxed">Tôi tối ưu câu lệnh yêu cầu AI tạo bộ câu hỏi kiểm tra kiến thức quản trị dựa trên các cấp độ nhận thức của thang đo tư duy Bloom, đưa ra cấu trúc giải thích chi tiết cho từng phương án đúng, sai thay vì chỉ đưa ra đáp án thô.</p>
+                        <!-- Khung hiển thị Prompt -->
+                        <div class="p-4 rounded-xl bg-black/40 space-y-3">
+                            <div class="flex justify-between items-center text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-forest-light/50">Cấu trúc câu lệnh (Input Prompt):</span>
+                                <span class="text-sunset-gold animate-pulse" id="w3-highlight-label">Tối ưu hóa nâng cao</span>
+                            </div>
+                            <div class="text-xs p-3 rounded bg-forest-deep/60 border border-forest-sage/10 font-mono text-white leading-relaxed whitespace-pre-wrap" id="w3-prompt-display">
+                                <!-- Prompt content loaded here -->
+                            </div>
+                            <div class="text-[10px] text-forest-light/50 flex items-center justify-between" id="w3-prompt-meta">
+                                <span>Kỹ thuật áp dụng: Role Prompting, CoT, Output Constraints</span>
+                                <span class="text-emerald-400"><i class="fa-solid fa-circle-check"></i> Độ chính xác: ~98%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             `,
             4: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 4</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Cộng tác dự án và quản trị hệ thống thông tin nhóm trực tuyến</h2>
-                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
-                        <strong>Dự án nhóm:</strong> "Xây dựng chiến lược marketing số cho một ứng dụng khởi nghiệp".
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 4</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Cộng tác dự án và quản trị hệ thống thông tin nhóm</h2>
                     </div>
-                    
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <p class="text-xs">
-                            Trong dự án này, tôi đảm nhiệm vai trò Trưởng nhóm Logistics và Quản trị nội dung. Tôi trực tiếp đóng góp hơn 40% khối lượng nội dung báo cáo và chịu trách nhiệm thiết lập không gian làm việc trực tuyến thông suốt cho cả đội.
-                        </p>
-                        
-                        <p class="font-bold text-xs text-white">Ứng dụng hiệu quả bộ công cụ cộng tác trực tuyến:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-xs font-light text-forest-light/75 leading-relaxed">
-                            <li><strong>Trello:</strong> Áp dụng quy trình quản lý Kanban để phân chia đầu việc chi tiết, sử dụng nhãn cảnh báo để phân loại công việc cấp bách.</li>
-                            <li><strong>Google Docs:</strong> Soạn thảo nội dung đồng thời và kiểm soát lịch sử chỉnh sửa văn bản để tránh mất mát tư liệu.</li>
-                            <li><strong>Discord:</strong> Thiết lập các kênh trò chuyện theo chủ đề, thực hiện trao đổi và tháo gỡ khó khăn thường nhật cho các thành viên.</li>
-                            <li><strong>Google Drive:</strong> Xây dựng thư mục lưu trữ phân cấp khoa học và tuân thủ chặt chẽ quy tắc đặt tên tệp chuẩn mực của nhóm.</li>
-                        </ul>
 
-                        <p class="font-bold text-xs text-white pt-2">Giải pháp xử lý các rào cản nhóm thực tế:</p>
-                        <p class="text-xs leading-relaxed">
-                            Tôi đã quay video màn hình để hướng dẫn kỹ thuật kéo thả Trello cho những bạn chưa quen, đề ra quy định viết nháp trên trang riêng để tránh chồng chéo khi sửa bài đồng thời trên Google Docs, và áp dụng kỹ thuật quản lý thời gian Pomodoro cùng khung giờ kiểm tra thông báo cố định để kiểm soát tình trạng quá tải thông tin.
-                        </p>
+                    <!-- THIẾT KẾ GIẢ LẬP KANBAN TRELLO VS DISCORD -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-users-gear mr-2"></i> Trình giả lập Không gian làm việc số
+                        </h4>
+                        
+                        <!-- Toggle Trello / Discord -->
+                        <div class="flex space-x-2">
+                            <button onclick="togglePlatformW4('trello')" id="trello-platform-btn" class="px-4 py-2 rounded-lg bg-hibiscus-red text-white text-xs font-bold">
+                                <i class="fa-brands fa-trello mr-1.5"></i> Bảng Kanban Trello
+                            </button>
+                            <button onclick="togglePlatformW4('discord')" id="discord-platform-btn" class="px-4 py-2 rounded-lg bg-forest-mid/40 text-forest-light/60 text-xs hover:text-white">
+                                <i class="fa-brands fa-discord mr-1.5"></i> Phòng chat Discord
+                            </button>
+                        </div>
+
+                        <!-- Khung Trello giả lập -->
+                        <div id="w4-trello-view" class="space-y-3">
+                            <p class="text-xs text-forest-light/60 font-light">
+                                Mô phỏng bảng quản lý tiến độ dự án Trello. Thử click nút "Cập nhật công việc" để di chuyển công việc từ Đang làm sang Đã hoàn thành.
+                            </p>
+                            <div class="grid grid-cols-3 gap-3 p-3 rounded-xl bg-black/40 min-h-[160px]">
+                                <!-- Column 1 -->
+                                <div class="bg-forest-deep/80 p-2 rounded-lg text-xs space-y-2">
+                                    <div class="font-bold text-white/50 border-b border-forest-sage/10 pb-1">CẦN LÀM</div>
+                                    <div class="p-2 rounded bg-forest-mid/20 border border-forest-sage/15 text-[10px] text-forest-light/80">Xây dựng Slogan</div>
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="bg-forest-deep/80 p-2 rounded-lg text-xs space-y-2">
+                                    <div class="font-bold text-white/50 border-b border-forest-sage/10 pb-1">ĐANG LÀM</div>
+                                    <div id="trello-inprogress-box" class="space-y-2">
+                                        <div class="p-2 rounded bg-forest-mid/40 border border-forest-sage/35 text-[10px] text-white flex flex-col justify-between">
+                                            <span>Biên tập kịch bản video</span>
+                                            <span class="text-[8px] mt-1 bg-hibiscus-red text-white px-1.5 py-0.5 rounded self-start uppercase font-bold">Cấp bách</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Column 3 -->
+                                <div class="bg-forest-deep/80 p-2 rounded-lg text-xs space-y-2">
+                                    <div class="font-bold text-white/50 border-b border-forest-sage/10 pb-1">HOÀN THÀNH</div>
+                                    <div id="trello-done-box" class="space-y-2">
+                                        <div class="p-2 rounded bg-forest-mid/10 border border-forest-sage/10 text-[10px] text-forest-light/40 line-through">Lên ý tưởng Mindmap</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <button onclick="moveTrelloW4()" class="px-3 py-1.5 rounded bg-forest-mid hover:bg-forest-sage text-white text-[10px] font-bold transition-all">
+                                    Cập nhật công việc <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Khung Discord giả lập -->
+                        <div id="w4-discord-view" class="space-y-3 hidden">
+                            <p class="text-xs text-forest-light/60 font-light">
+                                Mô phỏng luồng thông tin phản hồi và hỗ trợ nhóm tức thời trong kênh <code>#bàn-luận-nội-dung</code>.
+                            </p>
+                            <div class="p-4 rounded-xl bg-[#1e2229] border border-indigo-500/20 space-y-3 max-h-[180px] overflow-y-auto text-xs font-mono">
+                                <div class="flex items-start space-x-2">
+                                    <span class="font-bold text-pink-400">MinhChau_NMC:</span>
+                                    <span class="text-slate-300">Mình vừa bổ sung 40% phần phân tích thị trường trên Docs, mọi người vào xem ý kiến nhé.</span>
+                                </div>
+                                <div class="flex items-start space-x-2">
+                                    <span class="font-bold text-emerald-400">Khanh_Logistics:</span>
+                                    <span class="text-slate-300">Rất chi tiết Châu ơi! Để mình cập nhật lại tiến độ trên thẻ Trello ngay.</span>
+                                </div>
+                                <div class="flex items-start space-x-2 animate-pulse">
+                                    <span class="font-bold text-yellow-400">HeThong_Bot:</span>
+                                    <span class="text-indigo-300">File báo cáo vừa được đồng bộ hóa thành công trên Google Drive của nhóm.</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `,
             5: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 5</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Sáng tạo chiến dịch truyền thông đa mô hình bằng AI tạo sinh</h2>
-                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
-                        <strong>Chiến dịch thực hiện:</strong> "Thiết kế bộ sản phẩm truyền thông quảng bá lối sống bền vững cho giới trẻ Việt Nam".
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 5</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Sáng tạo nội dung truyền thông bằng trí tuệ nhân tạo</h2>
                     </div>
-                    
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <p class="text-xs leading-relaxed">
-                            Tôi đã ứng dụng thành công quy trình kết hợp đa mô hình công nghệ (Multi-modal workflow) để tự thiết kế một bộ sản phẩm Infographic truyền thông lối sống xanh rất lôi cuốn:
+
+                    <!-- THIẾT KẾ GIẢ LẬP WORKFLOW THIẾT KẾ ĐA MÔ HÌNH -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-bezier-curve mr-2"></i> Quy trình thiết kế đa mô hình AI (Multi-modal Workflow)
+                        </h4>
+                        <p class="text-xs text-forest-light/60 font-light">
+                            Click chọn từng bước trong quy trình 3 giai đoạn dưới đây để xem sự tương tác hỗ trợ lẫn nhau giữa các công cụ trí tuệ nhân tạo.
                         </p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="p-4 rounded-xl bg-forest-deep/75 border border-forest-sage/20 text-xs">
-                                <h4 class="font-bold text-white mb-2"><i class="fa-solid fa-brain mr-1.5 text-hibiscus-glow"></i> 1. Kịch bản nội dung</h4>
-                                <p class="text-forest-light/70 font-light">
-                                    Dùng Google Gemini viết kịch bản video TikTok 60 giây gần gũi với giới trẻ, sau đó tự biên tập lược bỏ các từ ngữ giáo điều để nội dung thân thiện hơn.
-                                </p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-forest-deep/75 border border-forest-sage/20 text-xs">
-                                <h4 class="font-bold text-white mb-2"><i class="fa-solid fa-image mr-1.5 text-hibiscus-glow"></i> 2. Khởi tạo hình ảnh</h4>
-                                <p class="text-forest-light/70 font-light">
-                                    Thiết kế câu lệnh mô tả chi tiết bằng tiếng Anh trên Banana AI để tạo chất liệu hình ảnh không gian làm việc xanh, kết cấu sắc nét và hòa hợp tự nhiên.
-                                </p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-forest-deep/75 border border-forest-sage/20 text-xs">
-                                <h4 class="font-bold text-white mb-2"><i class="fa-solid fa-wand-magic-sparkles mr-1.5 text-hibiscus-glow"></i> 3. Bố cục đồ họa</h4>
-                                <p class="text-forest-light/70 font-light">
-                                    Đưa toàn bộ tư liệu chữ và hình ảnh tự tạo vào Canva AI, ứng dụng Magic Design để tự động hóa căn lề, phối màu hài hòa và tạo thành phẩm cuối cùng.
+                        <!-- Sơ đồ quy trình -->
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <button onclick="showW5Workflow(1)" id="w5-step1-btn" class="p-3 rounded-xl border border-hibiscus-red bg-forest-mid/50 text-white font-bold">
+                                1. Viết kịch bản <br> (Gemini)
+                            </button>
+                            <button onclick="showW5Workflow(2)" id="w5-step2-btn" class="p-3 rounded-xl border border-forest-sage/20 bg-forest-deep/60 text-forest-light/50">
+                                2. Tạo hình ảnh <br> (Banana AI)
+                            </button>
+                            <button onclick="showW5Workflow(3)" id="w5-step3-btn" class="p-3 rounded-xl border border-forest-sage/20 bg-forest-deep/60 text-forest-light/50">
+                                3. Dựng Poster <br> (Canva AI)
+                            </button>
+                        </div>
+
+                        <!-- Vùng nội dung hiển thị cho từng bước -->
+                        <div class="p-4 rounded-xl bg-black/40 min-h-[160px]" id="w5-workflow-display">
+                            <div class="space-y-2">
+                                <div class="text-[10px] uppercase font-bold text-hibiscus-glow">Giai đoạn 1: Thiết lập kịch bản chữ (Text Generation)</div>
+                                <h5 class="text-xs font-bold text-white">Google Gemini - Viết kịch bản video TikTok 60 giây</h5>
+                                <p class="text-xs text-forest-light/80 leading-relaxed font-light">
+                                    <strong>Prompt sử dụng:</strong> "Bạn là Giám đốc Marketing của một thương hiệu tiêu dùng bền vững tại Việt Nam. Viết kịch bản video ngắn 60s cho giới trẻ về lối sống xanh bền vững, ngôn ngữ bắt trend, cấu trúc 3 phần chặt chẽ."
                                 </p>
                             </div>
                         </div>
-
-                        <p class="text-xs italic pt-2 leading-relaxed">
-                            *Quan điểm làm việc: AI chỉ đóng vai trò như một cộng sự hỗ trợ tạo nguồn tư liệu thô nhanh chóng. Chất xám, tư duy thẩm định và định hướng chiến lược sáng tạo của tôi chiếm hơn 60% giá trị cốt lõi để tạo nên nét chân thực cho sản phẩm truyền thông.
-                        </p>
                     </div>
                 </div>
             `,
             6: `
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 6</span>
-                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Chính sách sử dụng AI có trách nhiệm và liêm chính học thuật</h2>
-                    <div class="p-4 rounded-xl bg-forest-deep/60 border border-forest-sage/25 text-xs text-forest-light/75">
-                        <strong>Tiêu điểm phân tích:</strong> Định vị ranh giới hành vi sử dụng AI và thiết lập bộ nguyên tắc đạo đức học tập cá nhân.
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sunset-gold">Bài Tập Thực Hành Tuần 6</span>
+                        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-normal">Sử dụng công nghệ AI có trách nhiệm và liêm chính học thuật</h2>
                     </div>
-                    
-                    <div class="space-y-4 font-light text-sm text-forest-light/80 leading-relaxed">
-                        <p class="text-xs leading-relaxed">
-                            Trong nghiên cứu này, tôi đã phân tích chính sách học thuật cởi mở nhưng nghiêm túc của VNU-UEB. Nhà trường khuyến khích sinh viên coi AI là công cụ hỗ trợ gợi mở tư duy, nhưng nghiêm cấm việc sao chép nguyên bản thông tin do AI tạo sinh mà không trích dẫn nguồn gốc hoặc thiếu đi sự thẩm định cá nhân.
+
+                    <!-- THIẾT KẾ GIẢ LẬP MÁY PHÂN TÍCH ĐẠO ĐỨC AI -->
+                    <div class="p-6 rounded-2xl bg-forest-deep/80 border border-forest-sage/30 space-y-4">
+                        <h4 class="text-sm font-bold text-sunset-gold flex items-center">
+                            <i class="fa-solid fa-scale-balanced mr-2"></i> Máy thẩm định Đạo đức học thuật (AI Integrity Analyzer)
+                        </h4>
+                        <p class="text-xs text-forest-light/60 font-light">
+                            Hãy điều chỉnh thanh trượt tỷ lệ chất xám của bạn và đánh dấu vào các checkbox hành vi thực tế để hệ thống phân tích liêm chính học thuật tự động đưa ra kết luận.
                         </p>
 
-                        <p class="font-bold text-xs text-white">5 nguyên tắc liêm chính cá nhân khi sử dụng AI của tôi:</p>
-                        <ol class="list-decimal pl-5 space-y-2 text-xs font-light text-forest-light/75 leading-relaxed">
-                            <li><strong>Ý tưởng gốc làm nền tảng:</strong> Luôn chủ động suy nghĩ độc lập và phác thảo sơ đồ tư duy trước khi tham khảo các mô hình công nghệ.</li>
-                            <li><strong>Kiểm chứng chéo thông tin:</strong> Xác minh lại các số liệu, tác giả thực tế qua các cơ sở dữ liệu học thuật chính thống.</li>
-                            <li><strong>Minh bạch trong học thuật:</strong> Trung thực khai báo mức độ và vị trí có sự hỗ trợ của AI trong các báo cáo nộp giảng viên.</li>
-                            <li><strong>Kiểm soát tỷ lệ đóng góp:</strong> Đảm bảo dung lượng nội dung và lập luận cá nhân tự viết luôn chiếm trên 70% toàn bài.</li>
-                            <li><strong>Phát triển kỹ năng cốt lõi:</strong> Tuyệt đối không để AI làm thay các tác vụ rèn luyện tư duy cốt lõi như viết kết luận hay phân tích dữ liệu thô.</li>
-                        </ol>
+                        <div class="space-y-4 p-4 rounded-xl bg-black/40">
+                            <!-- Slider tỷ lệ chất xám cá nhân -->
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-xs">
+                                    <span class="text-forest-light/70 font-semibold">Tỷ lệ đóng góp chất xám cá nhân:</span>
+                                    <span class="text-sunset-gold font-bold" id="w6-slider-val">75%</span>
+                                </div>
+                                <input type="range" id="w6-percent-slider" min="0" max="100" value="75" oninput="updateW6Integrity()" class="w-full h-1.5 bg-forest-mid rounded-lg appearance-none cursor-pointer accent-hibiscus-red">
+                            </div>
+
+                            <!-- Checkbox hành vi -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-light">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" id="w6-chk-cite" checked onchange="updateW6Integrity()" class="rounded border-forest-sage text-hibiscus-red focus:ring-hibiscus-red">
+                                    <span>Khai báo nguồn lực & trích dẫn AI</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" id="w6-chk-verify" checked onchange="updateW6Integrity()" class="rounded border-forest-sage text-hibiscus-red focus:ring-hibiscus-red">
+                                    <span>Kiểm chứng độc lập số liệu thực tế</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" id="w6-chk-copy" onchange="updateW6Integrity()" class="rounded border-forest-sage text-hibiscus-red focus:ring-hibiscus-red">
+                                    <span class="text-hibiscus-glow">Sao chép nguyên văn AI 100%</span>
+                                </label>
+                            </div>
+
+                            <!-- Kết quả đánh giá động -->
+                            <div id="w6-result-banner" class="p-3 rounded-lg bg-emerald-950/40 border border-emerald-500/20 text-center text-xs space-y-1">
+                                <div class="font-bold text-emerald-400"><i class="fa-solid fa-circle-check"></i> HỢP LỆ (HỌC THUẬT AN TOÀN)</div>
+                                <p class="text-[10px] text-forest-light/60">Lộ trình học tập tuyệt vời, tôn trọng tối đa tính liêm chính và sự phát triển năng lực bản thân.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `
         };
 
-        // Hàm mở popup chi tiết bài tập
+        // Biến trạng thái cho bài tập 3
+        let w3Task = 1;
+        let w3Level = 'advanced';
+        const w3Data = {
+            1: {
+                basic: {
+                    text: '“Tóm tắt bài văn này giúp tôi với.”',
+                    highlight: 'Cực kỳ mơ hồ, thiếu định hướng',
+                    meta: 'Không áp dụng kỹ thuật tối ưu nào • Độ chính xác: ~30%'
+                },
+                improved: {
+                    text: '“Hãy tóm tắt bài đọc dưới đây thành một văn bản ngắn gọn khoảng 250 chữ. Hãy tập trung vào các luận điểm chính về công nghệ số và lược bỏ các ví dụ minh họa dài dòng.”',
+                    highlight: 'Có giới hạn dung lượng và chủ đề chính',
+                    meta: 'Áp dụng: Giới hạn độ dài, xác định chủ đề • Độ chính xác: ~75%'
+                },
+                advanced: {
+                    text: '“Bạn là một chuyên gia tóm tắt tài liệu học thuật và là trợ lý nghiên cứu ngành Quản trị kinh doanh. Nhiệm vụ của bạn là đọc kỹ tài liệu dưới đây và trích xuất thông tin theo quy trình suy nghĩ từng bước (Chain-of-Thought):\nBước 1: Xác định mục đích cốt lõi của nghiên cứu.\nBước 2: Liệt kê 3 phát hiện quan trọng nhất.\nBước 3: Chỉ ra hạn chế hoặc xu hướng phát triển trong tương lai.\nĐịnh dạng đầu ra sử dụng các gạch đầu dòng rõ ràng, văn phong chuyên nghiệp.”',
+                    highlight: 'Phân rã tư duy logic cực kỳ tối ưu',
+                    meta: 'Áp dụng: Role Prompting, CoT, Ràng buộc định dạng • Độ chính xác: ~98%'
+                }
+            },
+            2: {
+                basic: {
+                    text: '“Hiệu ứng mỏ neo là gì vậy?”',
+                    highlight: 'Chỉ nhận được câu trả lời định nghĩa khô khan',
+                    meta: 'Không áp dụng kỹ thuật tối ưu nào • Độ chính xác: ~40%'
+                },
+                improved: {
+                    text: '“Giải thích khái niệm ’Hiệu ứng mỏ neo’ trong kinh tế học hành vi cho sinh viên năm nhất ngành kinh tế, có kèm theo 1 ví dụ cụ thể trong đời sống.”',
+                    highlight: 'Có khoanh vùng đối tượng và yêu cầu ví dụ',
+                    meta: 'Áp dụng: Khoanh vùng đối tượng người nghe • Độ chính xác: ~70%'
+                },
+                advanced: {
+                    text: '“Hãy đóng vai một giáo sư Quản trị kinh doanh có khả năng diễn giải thiên tài. Sử dụng kỹ thuật Feynman để giải thích khái niệm ’Hiệu ứng mỏ neo’ theo các yêu cầu sau:\n(1) Định nghĩa bằng ngôn ngữ đơn giản nhất như nói với học sinh cấp 2.\n(2) Đưa ra một ví dụ về cách các cửa hàng quần áo áp dụng chiến thuật này để thu hút khách hàng (Tương tự như ví dụ: Hãng Apple đặt giá gốc $999 để bản $799 trông có vẻ rẻ).\n(3) Rút ra bài học cho người tiêu dùng để tránh bẫy tâm lý này.”',
+                    highlight: 'Giảng giải đa chiều, ví dụ chuẩn xác',
+                    meta: 'Áp dụng: Role Play, Feynman Technique, Few-shot • Độ chính xác: ~96%'
+                }
+            },
+            3: {
+                basic: {
+                    text: '“Tạo câu hỏi trắc nghiệm chương Quản trị học.”',
+                    highlight: 'Câu hỏi nông cạn, không bám sát kiến thức sâu',
+                    meta: 'Không áp dụng kỹ thuật tối ưu nào • Độ chính xác: ~30%'
+                },
+                improved: {
+                    text: '“Hãy tạo 5 câu hỏi trắc nghiệm có 4 phương án lựa chọn và 2 câu hỏi tự luận ngắn dựa trên nội dung chương 1 sách Quản trị học. Cung cấp đáp án ở cuối bài.”',
+                    highlight: 'Có số lượng và yêu cầu đáp án rõ ràng',
+                    meta: 'Áp dụng: Định lượng số câu hỏi đầu ra • Độ chính xác: ~75%'
+                },
+                advanced: {
+                    text: '“Bạn là một chuyên gia khảo thí đại học. Hãy thiết kế bộ câu hỏi ôn tập gồm 5 câu trắc nghiệm dựa theo thang đo tư duy Bloom (2 câu ở mức độ Nhận biết, 2 câu mức độ Thông hiểu và 1 câu mức độ Vận dụng cao về tình huống xử lý khủng hoảng của nhà quản trị).\nĐịnh dạng câu hỏi nghiêm ngặt: Mỗi câu trắc nghiệm phải có 4 phương án A, B, C, D. Phải giải thích chi tiết lý do tại sao phương án đúng được chọn và tại sao các phương án khác lại sai.”',
+                    highlight: 'Hệ thống câu hỏi khoa học, phân hóa cao',
+                    meta: 'Áp dụng: Thang đo Bloom, Output Constraints • Độ chính xác: ~97%'
+                }
+            }
+        };
+
+        // Hàm mở popup chi tiết bài tập và khởi chạy các tương tác
         function openModal(id) {
             const modal = document.getElementById('assignment-modal');
             const contentArea = document.getElementById('modal-content-area');
@@ -814,6 +1054,18 @@
             
             modal.classList.remove('opacity-0', 'pointer-events-none');
             document.body.classList.add('overflow-hidden');
+
+            // Khởi chạy trạng thái cho bài tập tương tác
+            if (id === 1) {
+                stepW1 = 0;
+                renderW1Files();
+            } else if (id === 2) {
+                runQueryW2(1);
+            } else if (id === 3) {
+                w3Task = 1;
+                w3Level = 'advanced';
+                renderW3Prompt();
+            }
         }
 
         // Hàm đóng popup
@@ -830,6 +1082,381 @@
                 closeModal();
             }
         });
+
+        // ================= TƯƠNG TÁC BÀI TẬP 1 =================
+        function renderW1Files() {
+            const fileDisplay = document.getElementById('w1-file-display');
+            const treeSub = document.getElementById('w1-tree-sub');
+            if (!fileDisplay) return;
+
+            fileDisplay.innerHTML = '';
+            treeSub.innerHTML = '';
+
+            // Vẽ cây thư mục trái dựa theo bước hiện tại
+            let subHtml = `<div class="flex items-center text-forest-light/60"><i class="fa-solid fa-folder mr-1.5"></i> TaiLieu</div>`;
+            if (stepW1 >= 7) {
+                subHtml = `<div class="flex items-center text-sunset-gold font-semibold"><i class="fa-solid fa-folder-open mr-1.5 animate-pulse"></i> TaiLieu</div>`;
+                if (stepW1 >= 8 && stepW1 < 10) {
+                    subHtml += `<div class="pl-4 flex items-center text-forest-light/80"><i class="fa-regular fa-file-lines mr-1.5"></i> GhiChuQuanTrong.txt</div>`;
+                }
+                if (stepW1 >= 9 && stepW1 !== 11) {
+                    subHtml += `<div class="pl-4 flex items-center text-forest-light/80"><i class="fa-regular fa-file-lines mr-1.5"></i> DiChuyen.txt</div>`;
+                }
+            }
+            treeSub.innerHTML = subHtml;
+
+            // Vẽ các file ở vùng hiển thị phải dựa theo bước
+            if (stepW1 < 3) {
+                fileDisplay.innerHTML = `<span class="text-xs text-forest-light/40 italic">Ổ đĩa D trống</span>`;
+            } else if (stepW1 >= 3) {
+                // Thư mục gốc luôn có
+                let folderHtml = `
+                    <div class="p-3 rounded-lg bg-forest-mid/30 border border-forest-sage/20 text-center text-xs w-24">
+                        <i class="fa-solid fa-folder-open text-xl text-sunset-gold mb-1 block"></i>
+                        <span class="truncate block text-[9px] text-white">ThucHanh_NMC</span>
+                    </div>
+                `;
+
+                if (stepW1 === 5) {
+                    folderHtml += `
+                        <div class="p-3 rounded-lg bg-forest-mid/50 border border-forest-sage/30 text-center text-xs w-24 animate-bounce">
+                            <i class="fa-regular fa-file-lines text-xl text-forest-light mb-1 block"></i>
+                            <span class="truncate block text-[9px] text-white">GhiChu.txt</span>
+                        </div>
+                    `;
+                }
+                if (stepW1 === 6) {
+                    folderHtml += `
+                        <div class="p-3 rounded-lg bg-forest-mid/50 border border-forest-sage/30 text-center text-xs w-24 animate-pulse">
+                            <i class="fa-regular fa-file-lines text-xl text-forest-light mb-1 block"></i>
+                            <span class="truncate block text-[9px] text-white">GhiChuQuanTrong.txt</span>
+                        </div>
+                    `;
+                }
+                if (stepW1 >= 7) {
+                    folderHtml += `
+                        <div class="p-3 rounded-lg bg-forest-mid/30 border border-forest-sage/20 text-center text-xs w-24">
+                            <i class="fa-solid fa-folder text-xl text-sunset-gold mb-1 block"></i>
+                            <span class="truncate block text-[9px] text-white">TaiLieu</span>
+                        </div>
+                    `;
+                }
+                if (stepW1 === 9) {
+                    folderHtml += `
+                        <div class="p-3 rounded-lg bg-forest-mid/40 border border-forest-sage/20 text-center text-xs w-24">
+                            <i class="fa-regular fa-file-lines text-xl text-forest-light/40 mb-1 block"></i>
+                            <span class="truncate block text-[9px] text-white/50">DiChuyen.txt</span>
+                        </div>
+                    `;
+                }
+
+                // Mô phỏng thùng rác bên ngoài
+                if (stepW1 >= 10) {
+                    let trashStyle = stepW1 === 10 ? 'text-hibiscus-glow animate-bounce' : 'text-forest-light/40';
+                    folderHtml += `
+                        <div class="p-3 rounded-lg bg-red-950/20 border border-red-500/10 text-center text-xs w-24 ml-auto">
+                            <i class="fa-solid fa-trash-can text-xl ${trashStyle} mb-1 block"></i>
+                            <span class="truncate block text-[9px] text-white/50">Thùng Rác</span>
+                        </div>
+                    `;
+                }
+
+                fileDisplay.innerHTML = folderHtml;
+            }
+        }
+
+        function nextW1Step() {
+            const statusText = document.getElementById('w1-status-text');
+            stepW1 = (stepW1 + 1) % 13;
+
+            const stepsInfo = {
+                0: "Ổ đĩa D: Trống, chuẩn bị khởi tạo thư mục gốc.",
+                1: "Nhấn Windows + E: Khởi chạy trình File Explorer của Windows.",
+                2: "Truy cập ổ đĩa D: Mở thư mục gốc đĩa hệ thống.",
+                3: "Tạo Folder: Khởi tạo thư mục 'ThucHanh_NguyenMinhChau'.",
+                4: "Double Click: Truy cập sâu vào bên trong thư mục gốc.",
+                5: "Tạo tệp: Khởi tạo file tài liệu trống mang tên 'GhiChu.txt'.",
+                6: "Rename: Đổi tên tệp văn bản thành 'GhiChuQuanTrong.txt'.",
+                7: "Tạo thư mục con: Khởi tạo thêm thư mục nhánh con mang tên 'TaiLieu'.",
+                8: "Thao tác Copy - Paste: Sao chép tệp ghi chú quan trọng vào sâu thư mục 'TaiLieu'.",
+                9: "Thao tác Cut - Paste: Tạo tệp 'DiChuyen.txt' và di dời thành công vào thư mục 'TaiLieu'.",
+                10: "Xóa tệp: Delete tệp ghi chú trong thư mục 'TaiLieu', chuyển tệp vào Thùng rác.",
+                11: "Xóa vĩnh viễn (Shift + Delete): Triệt tiêu hoàn toàn tệp 'DiChuyen.txt' khỏi hệ thống.",
+                12: "Khôi phục (Restore): Phục hồi tệp ghi chú quan trọng nguyên vẹn về vị trí ban đầu."
+            };
+
+            if (statusText) {
+                statusText.innerHTML = `<strong>Bước ${stepW1}:</strong> ${stepsInfo[stepW1]}`;
+            }
+            renderW1Files();
+        }
+
+        // ================= TƯƠNG TÁC BÀI TẬP 2 =================
+        const w2Docs = [
+            { id: "NQ01", title: "Nghiên cứu tác động của chuyển đổi số đến quản trị khách hàng", author: "Nguyễn & Trần (2022)", type: "Bài báo khoa học", score: 5, rank: "Loại A" },
+            { id: "HC02", title: "Xu hướng phát triển trải nghiệm khách hàng số tại Việt Nam", author: "Hoàng, C. M. (2023)", type: "Bài báo khoa học", score: 5, rank: "Loại A" },
+            { id: "BC10", title: "Báo cáo Chỉ số Thương mại điện tử Việt Nam 2024", author: "Bộ Công Thương (2024)", type: "Báo cáo Nhà nước", score: 5, rank: "Loại A" },
+            { id: "MK09", title: "Tương lai của chuyển đổi số bán lẻ khu vực Châu Á", author: "McKinsey (2023)", type: "Báo cáo tư vấn", score: 4.5, rank: "Loại B" },
+            { id: "DL11", title: "Báo cáo chuyển đổi trải nghiệm khách hàng ngành bán lẻ", author: "Deloitte (2023)", type: "Báo cáo tư vấn", score: 4.5, rank: "Loại B" }
+        ];
+
+        function runQueryW2(num) {
+            const resultsBox = document.getElementById('w2-results-box');
+            const queryTitle = document.getElementById('w2-query-title');
+            const docList = document.getElementById('w2-doc-list');
+            const btn1 = document.getElementById('q1-btn');
+            const btn2 = document.getElementById('q2-btn');
+
+            if (!resultsBox || !docList) return;
+
+            resultsBox.classList.remove('hidden');
+            
+            if (num === 1) {
+                queryTitle.innerHTML = 'Kết quả truy vấn cú pháp tiếng Anh (English Syntax)';
+                btn1.classList.add('border-sunset-gold', 'bg-forest-mid/50');
+                btn2.classList.remove('border-sunset-gold', 'bg-forest-mid/50');
+            } else {
+                queryTitle.innerHTML = 'Kết quả truy vấn cú pháp tiếng Việt (Vietnamese Syntax)';
+                btn2.classList.add('border-sunset-gold', 'bg-forest-mid/50');
+                btn1.classList.remove('border-sunset-gold', 'bg-forest-mid/50');
+            }
+
+            let html = '';
+            w2Docs.forEach(doc => {
+                let stars = '';
+                for (let i = 0; i < 5; i++) {
+                    stars += i < Math.floor(doc.score) ? '<i class="fa-solid fa-star text-sunset-gold mr-0.5"></i>' : '<i class="fa-regular fa-star text-forest-light/20 mr-0.5"></i>';
+                }
+                html += `
+                    <div class="p-3 rounded-lg bg-forest-mid/20 border border-forest-sage/20 hover:border-sunset-gold/40 transition-colors flex justify-between items-center text-xs">
+                        <div class="space-y-1">
+                            <div class="flex items-center space-x-2">
+                                <span class="px-1.5 py-0.5 rounded bg-forest-dark text-[9px] font-bold text-sunset-gold">${doc.id}</span>
+                                <span class="font-bold text-white">${doc.author}</span>
+                                <span class="text-[10px] text-forest-light/40">${doc.type}</span>
+                            </div>
+                            <p class="text-forest-light/80 font-light truncate max-w-[300px] sm:max-w-xl">${doc.title}</p>
+                        </div>
+                        <div class="text-right space-y-1">
+                            <div class="flex items-center justify-end">${stars}</div>
+                            <span class="text-[9px] uppercase font-bold tracking-wider text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded">${doc.rank}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            docList.innerHTML = html;
+        }
+
+        // ================= TƯƠNG TÁC BÀI TẬP 3 =================
+        function switchTaskW3(taskNum) {
+            w3Task = taskNum;
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`t${i}-btn`);
+                if (btn) {
+                    if (i === taskNum) {
+                        btn.className = "px-4 py-2 border-b-2 border-hibiscus-red text-white font-semibold";
+                    } else {
+                        btn.className = "px-4 py-2 border-b-2 border-transparent text-forest-light/50";
+                    }
+                }
+            }
+            renderW3Prompt();
+        }
+
+        function switchLevelW3(level) {
+            w3Level = level;
+            const levels = ['basic', 'improved', 'advanced'];
+            levels.forEach(l => {
+                const btn = document.getElementById(`l-${l}-btn`);
+                if (btn) {
+                    if (l === level) {
+                        btn.className = "flex-1 py-2 rounded-lg bg-hibiscus-red text-white text-xs font-bold transition-all";
+                    } else {
+                        btn.className = "flex-1 py-2 rounded-lg bg-forest-mid/30 border border-forest-sage/20 text-xs text-forest-light/50 hover:text-white transition-all";
+                    }
+                }
+            });
+            renderW3Prompt();
+        }
+
+        function renderW3Prompt() {
+            const display = document.getElementById('w3-prompt-display');
+            const label = document.getElementById('w3-highlight-label');
+            const meta = document.getElementById('w3-prompt-meta');
+            if (!display) return;
+
+            const current = w3Data[w3Task][w3Level];
+            display.textContent = current.text;
+            label.textContent = current.highlight;
+            
+            let colorClass = 'text-sunset-gold';
+            if (w3Level === 'basic') colorClass = 'text-hibiscus-glow';
+            if (w3Level === 'improved') colorClass = 'text-blue-400';
+            if (w3Level === 'advanced') colorClass = 'text-emerald-400';
+            
+            label.className = `text-[10px] uppercase font-bold tracking-wider ${colorClass}`;
+            meta.innerHTML = current.meta;
+        }
+
+        // ================= TƯƠNG TÁC BÀI TẬP 4 =================
+        let w4InprogressEmpty = false;
+        function togglePlatformW4(platform) {
+            const trelloBtn = document.getElementById('trello-platform-btn');
+            const discordBtn = document.getElementById('discord-platform-btn');
+            const trelloView = document.getElementById('w4-trello-view');
+            const discordView = document.getElementById('w4-discord-view');
+
+            if (platform === 'trello') {
+                trelloBtn.className = "px-4 py-2 rounded-lg bg-hibiscus-red text-white text-xs font-bold";
+                discordBtn.className = "px-4 py-2 rounded-lg bg-forest-mid/40 text-forest-light/60 text-xs hover:text-white";
+                trelloView.classList.remove('hidden');
+                discordView.classList.add('hidden');
+            } else {
+                discordBtn.className = "px-4 py-2 rounded-lg bg-hibiscus-red text-white text-xs font-bold";
+                trelloBtn.className = "px-4 py-2 rounded-lg bg-forest-mid/40 text-forest-light/60 text-xs hover:text-white";
+                discordView.classList.remove('hidden');
+                trelloView.classList.add('hidden');
+            }
+        }
+
+        function moveTrelloW4() {
+            const ipBox = document.getElementById('trello-inprogress-box');
+            const doneBox = document.getElementById('trello-done-box');
+            if (!ipBox || !doneBox) return;
+
+            if (!w4InprogressEmpty) {
+                ipBox.innerHTML = `<span class="text-[9px] text-forest-light/35 italic">Không có công việc đang làm</span>`;
+                doneBox.innerHTML += `
+                    <div class="p-2 rounded bg-forest-mid/30 border border-emerald-500/20 text-[10px] text-emerald-300 animate-bounce">
+                        <span>Biên tập kịch bản video</span>
+                    </div>
+                `;
+                w4InprogressEmpty = true;
+            } else {
+                ipBox.innerHTML = `
+                    <div class="p-2 rounded bg-forest-mid/40 border border-forest-sage/35 text-[10px] text-white flex flex-col justify-between">
+                        <span>Biên tập kịch bản video</span>
+                        <span class="text-[8px] mt-1 bg-hibiscus-red text-white px-1.5 py-0.5 rounded self-start uppercase font-bold">Cấp bách</span>
+                    </div>
+                `;
+                doneBox.innerHTML = `
+                    <div class="p-2 rounded bg-forest-mid/10 border border-forest-sage/10 text-[10px] text-forest-light/40 line-through">Lên ý tưởng Mindmap</div>
+                `;
+                w4InprogressEmpty = false;
+            }
+        }
+
+        // ================= TƯƠNG TÁC BÀI TẬP 5 =================
+        const w5WorkflowContent = {
+            1: `
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-hibiscus-glow">Giai đoạn 1: Thiết lập kịch bản chữ (Text Generation)</div>
+                    <h5 class="text-xs font-bold text-white">Google Gemini - Viết kịch bản video TikTok 60 giây</h5>
+                    <p class="text-xs text-forest-light/80 leading-relaxed font-light">
+                        <strong>Prompt sử dụng:</strong> "Bạn là Giám đốc Marketing của một thương hiệu tiêu dùng bền vững tại Việt Nam. Viết kịch bản video ngắn 60s cho giới trẻ về lối sống xanh bền vững, ngôn ngữ bắt trend, cấu trúc 3 phần chặt chẽ."
+                    </p>
+                    <div class="p-3 bg-forest-deep rounded border border-forest-sage/20 text-[10px] text-sunset-gold/90 font-mono">
+                        "Kịch bản TikTok: Lối sống xanh không khó như bạn nghĩ! Tone & Mood: Năng động, hài hước, gần gũi. Lời thoại bắt đầu bằng một cú giật gân (hook) trong 3 giây..."
+                    </div>
+                </div>
+            `,
+            2: `
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-hibiscus-glow">Giai đoạn 2: Tạo lập chất liệu hình ảnh (Image Generation)</div>
+                    <h5 class="text-xs font-bold text-white">Banana AI - Khởi tạo chất liệu hình ảnh nghệ thuật sinh thái</h5>
+                    <p class="text-xs text-forest-light/80 leading-relaxed font-light">
+                        <strong>Prompt sử dụng:</strong> "A cyberpunk eco-friendly workspace, young Vietnamese student using reusable coffee cup, neon green and soft biophilic lighting, clean flat vector style, minimalist, high resolution, 8k..."
+                    </p>
+                    <div class="p-2 rounded bg-forest-deep border border-forest-sage/20 text-[10px] text-emerald-400">
+                        <i class="fa-solid fa-spinner animate-spin-slow mr-1"></i> Trả về ảnh phân giải cao 16:9, thể hiện rõ nét tinh thần công nghệ giao hòa thiên nhiên.
+                    </div>
+                </div>
+            `,
+            3: `
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-hibiscus-glow">Giai đoạn 3: Thiết kế và dàn trang (Layout & Formatting)</div>
+                    <h5 class="text-xs font-bold text-white">Canva AI - Kiến tạo Poster & Infographic hoàn chỉnh</h5>
+                    <p class="text-xs text-forest-light/80 leading-relaxed font-light">
+                        <strong>Quy trình xử lý:</strong> Đưa toàn bộ tư liệu chữ đã chuẩn hóa và hình ảnh thô đã cắt từ Banana AI vào Canva, khởi động trợ lý Magic Design để phối màu và sắp đặt bố cục dọc 4:5.
+                    </p>
+                    <div class="p-2 rounded bg-forest-deep border border-forest-sage/20 text-[10px] text-white/90">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> Poster thành phẩm hoàn chỉnh với tông màu xanh pastel dịu mát, cấu trúc 3 phần tiêu dùng xanh thông minh.
+                    </div>
+                </div>
+            `
+        };
+
+        function showW5Workflow(stepNum) {
+            const display = document.getElementById('w5-workflow-display');
+            if (!display) return;
+
+            // Đổi style button active
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`w5-step${i}-btn`);
+                if (btn) {
+                    if (i === stepNum) {
+                        btn.className = "p-3 rounded-xl border border-hibiscus-red bg-forest-mid/50 text-white font-bold transition-all";
+                    } else {
+                        btn.className = "p-3 rounded-xl border border-forest-sage/20 bg-forest-deep/60 text-forest-light/50 transition-all";
+                    }
+                }
+            }
+
+            display.innerHTML = w5WorkflowContent[stepNum];
+        }
+
+        // ================= TƯƠNG TÁC BÀI TẬP 6 =================
+        function updateW6Integrity() {
+            const slider = document.getElementById('w6-percent-slider');
+            const sliderVal = document.getElementById('w6-slider-val');
+            const chkCite = document.getElementById('w6-chk-cite');
+            const chkVerify = document.getElementById('w6-chk-verify');
+            const chkCopy = document.getElementById('w6-chk-copy');
+            const banner = document.getElementById('w6-result-banner');
+
+            if (!slider || !banner) return;
+
+            const val = parseInt(slider.value);
+            sliderVal.innerText = val + "%";
+
+            // Kiểm tra tính hợp lệ đạo đức học thuật
+            let isValid = true;
+            let feedbackTitle = '<i class="fa-solid fa-circle-check"></i> HỢP LỆ (HỌC THUẬT AN TOÀN)';
+            let feedbackDesc = 'Lộ trình học tập tuyệt vời, tôn trọng tối đa tính liêm chính và sự phát triển năng lực bản thân.';
+            let bannerClass = 'p-3 rounded-lg bg-emerald-950/40 border border-emerald-500/20 text-center text-xs space-y-1';
+            let titleClass = 'font-bold text-emerald-400';
+
+            if (val < 70) {
+                isValid = false;
+                feedbackTitle = '<i class="fa-solid fa-triangle-exclamation"></i> CẢNH BÁO (RỦI RO HỌC THUẬT)';
+                feedbackDesc = 'Tỷ lệ đóng góp cá nhân quá thấp (Dưới 70%). Hãy bổ sung tư duy tự luận cá nhân nhiều hơn.';
+                bannerClass = 'p-3 rounded-lg bg-amber-950/40 border border-amber-500/20 text-center text-xs space-y-1';
+                titleClass = 'font-bold text-amber-400';
+            }
+
+            if (chkCopy.checked) {
+                isValid = false;
+                feedbackTitle = '<i class="fa-solid fa-circle-xmark"></i> VI PHẠM ĐẠO ĐỨC (ĐẠO VĂN)';
+                feedbackDesc = 'Hành vi sao chép nguyên văn AI mà không có sự kiểm chứng và cải biên là vi phạm quy định học thuật của VNU-UEB.';
+                bannerClass = 'p-3 rounded-lg bg-red-950/40 border border-red-500/20 text-center text-xs space-y-1';
+                titleClass = 'font-bold text-hibiscus-glow';
+            } else if (!chkCite.checked) {
+                isValid = false;
+                feedbackTitle = '<i class="fa-solid fa-circle-xmark"></i> THIẾU MINH BẠCH (THIẾU TRÍCH DẪN)';
+                feedbackDesc = 'Sử dụng công nghệ hỗ trợ nhưng không khai báo nguồn lực có thể dẫn đến việc nghi ngờ thiếu liêm chính.';
+                bannerClass = 'p-3 rounded-lg bg-red-950/40 border border-red-500/20 text-center text-xs space-y-1';
+                titleClass = 'font-bold text-hibiscus-glow';
+            } else if (!chkVerify.checked) {
+                isValid = false;
+                feedbackTitle = '<i class="fa-solid fa-triangle-exclamation"></i> CẢNH BÁO (RỦI RO SAI LỆCH DỮ LIỆU)';
+                feedbackDesc = 'Thiếu bước kiểm chứng chéo thông tin. Các mô hình AI có thể ảo tưởng số liệu sai thực tế thị trường.';
+                bannerClass = 'p-3 rounded-lg bg-amber-950/40 border border-amber-500/20 text-center text-xs space-y-1';
+                titleClass = 'font-bold text-amber-400';
+            }
+
+            banner.className = bannerClass;
+            banner.innerHTML = `<div class="${titleClass}">${feedbackTitle}</div><p class="text-[10px] text-forest-light/60">${feedbackDesc}</p>`;
+        }
     </script>
 </body>
 </html>
